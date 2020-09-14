@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 Page</title>
+</head>
+<body>
+<script>
+    // all of these become keys with values in the windows
+    this.key1 = "donald duck"
+    window.key2 = "mickey mouse"
+    var key3 = "uncle scrooge"
+
+    // this refers to the window in browser, so it prints the window object
+    console.log(this)
+    // this prints true because 'this' refers to window
+    console.log(this == window)
+
+    for (let key in this) {
+      document.write(key + ': ' + this[key])
+      document.write("<br>");
+    }
+</script>
+</body>
+</html>
+ 
